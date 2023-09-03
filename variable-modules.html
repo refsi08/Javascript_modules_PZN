@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Modules</title>
+</head>
+
+<body>
+
+    <h1>Javascript Variable Modules</h1>
+
+    <script type="module">
+
+        // berikan import agar file direktori js bisa di import
+        import { name } from "./script/variable.js";
+
+        // tidak bisa mempunyai variable yang sama walaupun beda file (ada cara nya menggunakan alias)
+        import { name as nama } from "./script/variable2.js";
+
+        console.log(name);
+        console.log(nama);
+    </script>
+</body>
+
+</html>

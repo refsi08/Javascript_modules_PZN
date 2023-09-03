@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript With Modules</title>
+</head>
+
+<body>
+
+    <h1>Javascript With Modules</h1>
+
+    <script type="module">
+
+        // berikan import agar file direktori js bisa di import
+        import { sayHello, sayGoodBye, name } from "./script/say.js";
+
+        sayHello("Refsi");
+        sayGoodBye("Bro");
+
+        console.log(name);
+    </script>
+</body>
+
+</html>

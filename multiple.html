@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple</title>
+</head>
+
+<body>
+
+    <h1>Javascript Multiple Export</h1>
+
+    <script type="module">
+        import { name, sum, Company } from './script/multiple.js';
+
+        console.log(name);
+
+        console.log(sum(2, 5));
+
+        const company = new Company();
+
+    </script>
+</body>
+
+</html>
